@@ -1,0 +1,964 @@
+diff -Nuard sound-monitor-1.99.0.orig/configure.in sound-monitor-1.99.0/configure.in
+--- sound-monitor-1.99.0.orig/configure.in	2003-02-14 19:36:30.000000000 +0100
++++ sound-monitor-1.99.0/configure.in	2003-09-14 13:12:08.000000000 +0200
+@@ -70,7 +70,7 @@
+ 
+ AC_SUBST(LIBPNG)
+ 
+-ALL_LINGUAS=""
++ALL_LINGUAS="pl"
+ AM_GLIB_GNU_GETTEXT
+ GETTEXT_PACKAGE=sound-monitor-2
+ AC_SUBST(GETTEXT_PACKAGE)
+diff -Nuard sound-monitor-1.99.0.orig/po/pl.po sound-monitor-1.99.0/po/pl.po
+--- sound-monitor-1.99.0.orig/po/pl.po	1970-01-01 01:00:00.000000000 +0100
++++ sound-monitor-1.99.0/po/pl.po	2003-09-14 14:23:09.000000000 +0200
+@@ -0,0 +1,900 @@
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# Marcin Krzyzanowski <krzak@linux.net.pl>, 2003.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: PACKAGE VERSION\n"
++"POT-Creation-Date: 2003-02-14 14:23-0500\n"
++"PO-Revision-Date: 2003-09-14 13:14-0200\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=ISO-8859-2\n"
++"Content-Transfer-Encoding: 8bit\n"
++
++#: src/GNOME_SoundMonitorApplet.xml.h:1
++msgid "_About..."
++msgstr "_Informacje o..."
++
++#: src/GNOME_SoundMonitorApplet.xml.h:2
++msgid "_Help"
++msgstr "_Pomo_c"
++
++#: src/GNOME_SoundMonitorApplet.xml.h:3
++msgid "_Manager..."
++msgstr "_Menad¿er..."
++
++#: src/GNOME_SoundMonitorApplet.xml.h:4
++msgid "_Preferences..."
++msgstr "_Preferencje..."
++
++#: src/GNOME_SoundMonitorApplet.xml.h:5
++msgid "_Skin editor..."
++msgstr "_Edytor skórek..."
++
++
++#: src/GNOME_SoundMonitorApplet.server.in.in.h:1
++msgid "Monitor sound output of esound."
++msgstr "Monitor wyj¶cia d¼wiêku z serwera esound"
++
++#: src/GNOME_SoundMonitorApplet.server.in.in.h:2
++msgid "Multimedia"
++msgstr "Multimedia"
++
++#: src/GNOME_SoundMonitorApplet.server.in.in.h:3
++msgid "Sound Monitor"
++msgstr "Monitor D¼wiêku"
++
++#: src/GNOME_SoundMonitorApplet.server.in.in.h:4
++msgid "Sound Monitor Applet Factory"
++msgstr ""
++
++#: src/GNOME_SoundMonitorApplet.server.in.in.h:5
++msgid "Sound Monitor applet"
++msgstr "Monitor D¼wiêku"
++
++#: src/main.c:34
++msgid "translators"
++msgstr "Marcin Krzy¿anowski"
++
++#: src/main.c:43
++msgid "Sound Monitor Applet"
++msgstr "Monitor D¼wiêku"
++
++#: src/main.c:45
++msgid ""
++"Sound monitor interface to Esound\n"
++"\n"
++"Released under the GNU general public license."
++msgstr ""
++"Monitor d¼wiêku serwera Esound\n"
++"\n"
++"Rozpowszechniany na zasadzie licencji GNU GPL."
++
++#: src/main.c:51
++msgid "Sound Monitor home page"
++msgstr "Strona Domowa"
++
++#: src/main.c:105
++msgid "Place Esound in standby"
++msgstr "U¶pij Esound"
++
++#: src/main.c:109
++msgid "Resume Esound"
++msgstr "Przywróæ Esound"
++
++#: src/main.c:113
++msgid "Start Esound"
++msgstr "Uruchom Esound"
++
++#: src/main.c:221
++msgid "Skin editor - Sound Monitor"
++msgstr "Edytor skórek - Monitor D¼wiêku"
++
++#: src/manager.c:937 src/manager.c:1154
++msgid "Length"
++msgstr "D³ugo¶æ"
++
++#: src/manager.c:942
++msgid "Time"
++msgstr "Czas"
++
++#: src/manager.c:1153 src/manager.c:1154
++msgid "Id"
++msgstr ""
++
++#: src/manager.c:1153 src/manager.c:1154
++msgid "Name"
++msgstr "Nazwa"
++
++#: src/manager.c:1153
++msgid "Type"
++msgstr "Typ"
++
++#: src/manager.c:1153 src/manager.c:1154
++msgid "Rate"
++msgstr "Czêstotliwo¶æ"
++
++#: src/manager.c:1153 src/manager.c:1154
++msgid "Bits"
++msgstr "Bity"
++
++#: src/manager.c:1153 src/manager.c:1154
++msgid "Format"
++msgstr ""
++
++#: src/manager.c:1153 src/manager.c:1154 src/manager.c:1288 src/manager.c:1376
++msgid "Volume"
++msgstr "G³o¶no¶æ"
++
++#: src/manager.c:1154
++msgid "P"
++msgstr ""
++
++#: src/manager.c:1154
++msgid "L"
++msgstr ""
++
++#: src/manager.c:1179
++msgid "Sound Monitor - Manager"
++msgstr "Monitor D¼wiêku - Menad¿er"
++
++#. server info
++#: src/manager.c:1205
++msgid "Server information:"
++msgstr "Informacje o serwerze"
++
++#: src/manager.c:1208
++msgid "Server"
++msgstr "Serwer"
++
++#. stream info
++#: src/manager.c:1228
++msgid "Connected streams:"
++msgstr "Po³±czone strumienie"
++
++#: src/manager.c:1231
++msgid "Streams"
++msgstr "Strumienie"
++
++#: src/manager.c:1304 src/manager.c:1392
++msgid "Balance"
++msgstr "Balans"
++
++#. sample info
++#: src/manager.c:1310
++msgid "Cached samples: (select to play)"
++msgstr "Próbki w pamiêci podrêcznej: (wybierz aby odegraæ)"
++
++#: src/manager.c:1313
++msgid "Samples"
++msgstr "Próbki"
++
++#. add default theme
++#: src/properties.c:266
++msgid "None (default)"
++msgstr "Brak (standardowo)"
++
++#: src/properties.c:332
++msgid "Sound Monitor Preferences"
++msgstr "Preferencje Monitora D¼wiêku"
++
++#: src/properties.c:344
++msgid "Peak indicator"
++msgstr "Wska¼nik maksimum"
++
++#: src/properties.c:353
++msgid "off"
++msgstr "wy³."
++
++#: src/properties.c:363
++msgid "active"
++msgstr "aktywne"
++
++#: src/properties.c:373
++msgid "smooth"
++msgstr "³agodnie"
++
++#: src/properties.c:383
++msgid "Peak indicator falloff speed"
++msgstr ""
++
++#: src/properties.c:401
++msgid "Scope (scale 1:X, where X = ? )"
++msgstr ""
++
++#: src/properties.c:419
++msgid "Connect points in scope"
++msgstr ""
++
++#: src/properties.c:426
++msgid "Screen refresh (frames per second)"
++msgstr "Od¶wierzanie obrazu (ramki na sekundê)"
++
++#: src/properties.c:444
++msgid "General"
++msgstr "G³ówne"
++
++#: src/properties.c:462
++msgid "Theme file (directory):"
++msgstr "Plik tematu (katalog)"
++
++#: src/properties.c:490
++msgid "Theme"
++msgstr "Temat"
++
++#: src/properties.c:508
++msgid "ESD host to monitor:"
++msgstr "Monitorowany serwer ESD:"
++
++#: src/properties.c:522
++msgid "Monitor sound input (only use if sound card is FULL DUPLEX)"
++msgstr "Monitoruj wej¶cie d¼wiêku (u¿ywaj tylko gdy twoja karta dzia³a w trybie FULL DUPLEX)"
++
++#: src/properties.c:529
++msgid "Latency (tenths of a second)"
++msgstr ""
++
++#: src/properties.c:560
++msgid "Advanced"
++msgstr "Zaawansowane"
++
++#: src/ui2_button_edit.c:166 src/ui2_button_edit.c:256
++#: src/ui2_button_edit.c:275
++msgid "Indicator"
++msgstr ""
++
++#: src/ui2_button_edit.c:169 src/ui2_button_edit.c:256
++#: src/ui2_button_edit.c:276
++msgid "Prelight"
++msgstr ""
++
++#: src/ui2_button_edit.c:199
++msgid "Button error"
++msgstr ""
++
++#: src/ui2_button_edit.c:199
++msgid "Button must contain a key and valid image."
++msgstr ""
++
++#: src/ui2_button_edit.c:256 src/ui2_editor.c:1705 src/ui2_editor.c:1749
++#: src/ui2_editor.c:2155 src/ui2_item_edit.c:211 src/ui2_meter_edit.c:273
++#: src/ui2_scope_edit.c:350 src/ui2_spectrum_edit.c:389
++msgid "Image"
++msgstr "Obraz"
++
++#: src/ui2_button_edit.c:256 src/ui2_item_edit.c:211 src/ui2_meter_edit.c:273
++#: src/ui2_scope_edit.c:350 src/ui2_spectrum_edit.c:389
++msgid "Key"
++msgstr "Klucz"
++
++#: src/ui2_button_edit.c:272 src/ui2_editor.c:4435 src/ui2_item_edit.c:227
++#: src/ui2_meter_edit.c:289 src/ui2_scope_edit.c:366
++#: src/ui2_spectrum_edit.c:405
++msgid "Data:"
++msgstr "Dane:"
++
++#: src/ui2_button_edit.c:273 src/ui2_editor.c:4441 src/ui2_item_edit.c:228
++#: src/ui2_meter_edit.c:290 src/ui2_scope_edit.c:367
++#: src/ui2_spectrum_edit.c:406
++msgid "Text id:"
++msgstr ""
++
++#: src/ui2_button_edit.c:278 src/ui2_editor.c:1762 src/ui2_editor.c:2177
++#: src/ui2_editor.c:4451 src/ui2_item_edit.c:232 src/ui2_meter_edit.c:296
++#: src/ui2_scope_edit.c:373 src/ui2_spectrum_edit.c:417
++msgid "Image:"
++msgstr "Obraz:"
++
++#: src/ui2_button_edit.c:281 src/ui2_editor.c:4454
++msgid "Clip mask:"
++msgstr ""
++
++#: src/ui2_button_edit.c:283 src/ui2_item_edit.c:236 src/ui2_meter_edit.c:300
++#: src/ui2_scope_edit.c:377 src/ui2_spectrum_edit.c:421
++msgid "Add"
++msgstr "Dodaj"
++
++#: src/ui2_editor.c:284
++msgid "Select font"
++msgstr "Wybierz czcionkê"
++
++#: src/ui2_editor.c:433 src/ui2_editor.c:4427
++msgid "Key:"
++msgstr "Klucz:"
++
++#: src/ui2_editor.c:686
++msgid "Widget too big"
++msgstr ""
++
++#: src/ui2_editor.c:686
++msgid "The widget is too big, the width or height exceeds the background size."
++msgstr ""
++
++#: src/ui2_editor.c:1707 src/ui2_editor.c:2103
++msgid "Has border"
++msgstr "Posiada ramkê"
++
++#: src/ui2_editor.c:1713
++msgid "Left:"
++msgstr "Lewo"
++
++#: src/ui2_editor.c:1714
++msgid "Right:"
++msgstr "Prawo"
++
++#: src/ui2_editor.c:1718
++msgid "Top:"
++msgstr "Na górze"
++
++#: src/ui2_editor.c:1719
++msgid "Bottom:"
++msgstr "Na dole"
++
++#: src/ui2_editor.c:1721 src/ui2_editor.c:2109 src/ui2_editor.c:2113
++#: src/ui2_editor.c:2119 src/ui2_editor.c:2123 src/ui2_scope_edit.c:250
++#: src/ui2_scope_edit.c:371
++msgid "Stretch"
++msgstr ""
++
++#: src/ui2_editor.c:1724
++msgid "Anchor"
++msgstr "Uchwyt"
++
++#: src/ui2_editor.c:1725 src/ui2_editor.c:2111 src/ui2_editor.c:4459
++msgid "Right"
++msgstr "Prawo"
++
++#: src/ui2_editor.c:1726 src/ui2_editor.c:2121 src/ui2_editor.c:4463
++msgid "Bottom"
++msgstr "Na dole"
++
++#: src/ui2_editor.c:1728
++msgid "Color"
++msgstr "Kolor"
++
++#: src/ui2_editor.c:1730
++msgid "Red:"
++msgstr "Czerwony"
++
++#: src/ui2_editor.c:1731
++msgid "Green:"
++msgstr "Zielony"
++
++#: src/ui2_editor.c:1732
++msgid "Blue:"
++msgstr "Niebieski"
++
++#: src/ui2_editor.c:1734
++msgid "Filled"
++msgstr "Wype³nione"
++
++#: src/ui2_editor.c:1736
++msgid "Alpha:"
++msgstr "Alfa"
++
++#: src/ui2_editor.c:1749 src/ui2_editor.c:2155
++msgid "Border"
++msgstr "Ramka"
++
++#: src/ui2_editor.c:1766 src/ui2_editor.c:2183
++msgid "Change"
++msgstr "Zmiana"
++
++#: src/ui2_editor.c:1918 src/ui2_editor.c:1926
++msgid "Background error"
++msgstr "B³±d t³a"
++
++#: src/ui2_editor.c:1918
++msgid "Mask is not valid."
++msgstr "Maska nie jest poprawna"
++
++#: src/ui2_editor.c:1926
++msgid "Image is not valid."
++msgstr "Obraz nie jest poprawny"
++
++#: src/ui2_editor.c:2107
++msgid "Left"
++msgstr "Lewo"
++
++#: src/ui2_editor.c:2108 src/ui2_editor.c:2112 src/ui2_editor.c:2118
++#: src/ui2_editor.c:2122
++msgid "Size:"
++msgstr "Rozmiar"
++
++#: src/ui2_editor.c:2117
++msgid "Top"
++msgstr "Na górze"
++
++#: src/ui2_editor.c:2127
++msgid "Stretch background"
++msgstr ""
++
++#: src/ui2_editor.c:2128
++msgid "Allow resize"
++msgstr "Pozwolenie na zmiane rozmiaru"
++
++#: src/ui2_editor.c:2130
++msgid "Default size"
++msgstr "Standardowy rozmiar"
++
++#: src/ui2_editor.c:2131 src/ui2_scope_edit.c:232
++msgid "Width:"
++msgstr "Szroko¶æ"
++
++#: src/ui2_editor.c:2132 src/ui2_scope_edit.c:235
++msgid "Height:"
++msgstr "Wysoko¶æ"
++
++#: src/ui2_editor.c:2134 src/ui2_scope_edit.c:238
++msgid "Reset to image"
++msgstr ""
++
++#: src/ui2_editor.c:2138
++msgid "Width attributes"
++msgstr "Parametry szeroko¶ci"
++
++#: src/ui2_editor.c:2139 src/ui2_editor.c:2144
++msgid "Min:"
++msgstr "Minimum:"
++
++#: src/ui2_editor.c:2140 src/ui2_editor.c:2145
++msgid "Max:"
++msgstr "Maksimum:"
++
++#: src/ui2_editor.c:2141 src/ui2_editor.c:2146
++msgid "Increment:"
++msgstr "Przyrost"
++
++#: src/ui2_editor.c:2143
++msgid "Height attributes"
++msgstr "Parametry wysoko¶ci"
++
++#: src/ui2_editor.c:2155
++msgid "Width"
++msgstr "Szeroko¶æ"
++
++#: src/ui2_editor.c:2155
++msgid "Height"
++msgstr "Wysoko¶æ"
++
++#: src/ui2_editor.c:2155
++msgid "Sizeable"
++msgstr "Zeminny rozmiar"
++
++#: src/ui2_editor.c:2155 src/ui2_editor.c:2181
++msgid "Transparent"
++msgstr "Przezroczysto¶æ"
++
++#: src/ui2_editor.c:2180
++msgid "Mask:"
++msgstr "Maska:"
++
++#: src/ui2_editor.c:2431
++msgid "window"
++msgstr "okno"
++
++#: src/ui2_editor.c:2487 src/ui2_editor.c:4007
++msgid "focus"
++msgstr "skupienie"
++
++#: src/ui2_editor.c:2689
++#, c-format
++msgid "%-12s w: %-3d h: %-3d"
++msgstr "%-12s szer: %-3d wys: %-3d"
++
++#: src/ui2_editor.c:2689
++msgid "skin size"
++msgstr "rozmiar skórki"
++
++#: src/ui2_editor.c:3399
++msgid "Load error"
++msgstr "B³±d podczas ³adowania"
++
++#: src/ui2_editor.c:3399
++msgid "Failed to load skin from path and key specified."
++msgstr ""
++
++#: src/ui2_editor.c:3424
++msgid "Widget still referenced"
++msgstr ""
++
++#: src/ui2_editor.c:3424
++msgid ""
++"This widget can not be removed,\n"
++"other widgets still reference it."
++msgstr ""
++
++#: src/ui2_editor.c:3477
++#, c-format
++msgid ""
++"Skin successfully saved to \"%s\"\n"
++"with data file \"%s\".\n"
++"Build %d\n"
++"Use the comment button to edit release information."
++msgstr ""
++
++#: src/ui2_editor.c:3480
++msgid "Skin saved"
++msgstr "Skórka zapisana"
++
++#: src/ui2_editor.c:3487
++#, c-format
++msgid ""
++"Failed to save skin to \"%s\"\n"
++"with data file \"%s\"."
++msgstr ""
++
++#: src/ui2_editor.c:3489
++msgid "Skin save failed"
++msgstr ""
++
++#: src/ui2_editor.c:3637
++msgid "Help - SLIK"
++msgstr ""
++
++#: src/ui2_editor.c:3645
++msgid "Scroll to follow active widget"
++msgstr ""
++
++#: src/ui2_editor.c:3795
++msgid "Edit comments - SLIK"
++msgstr ""
++
++#: src/ui2_editor.c:3804
++msgid "Title:"
++msgstr "Tytu³"
++
++#: src/ui2_editor.c:3805
++msgid "Version:"
++msgstr "Wersja:"
++
++#: src/ui2_editor.c:3806
++msgid "Author:"
++msgstr "Autor:"
++
++#: src/ui2_editor.c:3807
++msgid "Email:"
++msgstr ""
++
++#: src/ui2_editor.c:3808
++msgid "URL:"
++msgstr ""
++
++#: src/ui2_editor.c:3809
++msgid "License:"
++msgstr "Licencja:"
++
++#: src/ui2_editor.c:3811
++msgid "Time stamp:"
++msgstr ""
++
++#: src/ui2_editor.c:3815
++msgid "Build:"
++msgstr ""
++
++#: src/ui2_editor.c:3816
++msgid "Reset"
++msgstr ""
++
++#: src/ui2_editor.c:3822
++msgid "Comments"
++msgstr "Konetarze"
++
++#: src/ui2_editor.c:3926
++msgid "Reading skins - SLIK"
++msgstr ""
++
++#: src/ui2_editor.c:3932
++msgid "Extracting widgets, please wait..."
++msgstr ""
++
++#: src/ui2_editor.c:4003
++msgid "background"
++msgstr "t³o"
++
++#: src/ui2_editor.c:4071
++msgid "Add widget - SLIK"
++msgstr ""
++
++#: src/ui2_editor.c:4093
++msgid "import"
++msgstr ""
++
++#: src/ui2_editor.c:4103
++msgid "generate list from installed skins"
++msgstr ""
++
++#: src/ui2_editor.c:4231
++msgid "key"
++msgstr "klucz"
++
++#: src/ui2_editor.c:4231
++msgid "type"
++msgstr "typ"
++
++#: src/ui2_editor.c:4231
++msgid "data"
++msgstr ""
++
++#: src/ui2_editor.c:4236
++msgid "Editor warning"
++msgstr ""
++
++#: src/ui2_editor.c:4236
++msgid ""
++"The skin editor requires forced transparency, color shift, and double size "
++"options be off."
++msgstr ""
++
++#: src/ui2_editor.c:4271
++msgid "Skin editor - SLIK"
++msgstr ""
++
++#: src/ui2_editor.c:4303
++msgid "help"
++msgstr "pomoc"
++
++#: src/ui2_editor.c:4309
++msgid "overlay"
++msgstr ""
++
++#: src/ui2_editor.c:4317
++msgid "redraw"
++msgstr "odswierz"
++
++#: src/ui2_editor.c:4323
++msgid "click to focus"
++msgstr ""
++
++#: src/ui2_editor.c:4330
++msgid "comments"
++msgstr "komentarz"
++
++#: src/ui2_editor.c:4336
++msgid "add..."
++msgstr "dodaj..."
++
++#: src/ui2_editor.c:4342
++msgid "remove"
++msgstr "usuñ"
++
++#: src/ui2_editor.c:4418
++msgid "x:"
++msgstr ""
++
++#: src/ui2_editor.c:4422
++msgid "y:"
++msgstr ""
++
++#: src/ui2_editor.c:4457
++msgid "Coordinate anchor"
++msgstr ""
++
++#: src/ui2_editor.c:4475
++msgid "Load"
++msgstr "Za³aduj"
++
++#: src/ui2_editor.c:4481
++msgid "Skin path:"
++msgstr ""
++
++#: src/ui2_editor.c:4494
++msgid "Data filename:"
++msgstr ""
++
++#: src/ui2_editor.c:4515
++msgid "Save"
++msgstr "Zapisz"
++
++#: src/ui2_item_edit.c:128 src/ui2_item_edit.c:230
++msgid "Sections:"
++msgstr "Sekcja"
++
++#: src/ui2_item_edit.c:161
++msgid "Item error"
++msgstr ""
++
++#: src/ui2_item_edit.c:161
++msgid "Item must contain a key and valid image."
++msgstr ""
++
++#: src/ui2_item_edit.c:211
++msgid "Sections"
++msgstr ""
++
++#: src/ui2_main.c:1296
++msgid "About - SLIK"
++msgstr ""
++
++#: src/ui2_main.c:1320
++#, c-format
++msgid ""
++"SLIK\n"
++"SimpLIstic sKin interface\n"
++"version %s\n"
++"Copyright (c) 2002 by John Ellis\n"
++"http://gqmpeg.sourceforge.net\n"
++"gqview@users.sourceforge.net\n"
++"\n"
++"Released under the GNU General Public License"
++msgstr ""
++
++#: src/ui2_main.c:1385
++#, c-format
++msgid ""
++"utilizes SLIK %s\n"
++"SimpLIstic sKin interface"
++msgstr ""
++
++#: src/ui2_meter_edit.c:175 src/ui2_meter_edit.c:292
++#: src/ui2_spectrum_edit.c:259 src/ui2_spectrum_edit.c:408
++msgid "Segments:"
++msgstr ""
++
++#: src/ui2_meter_edit.c:178 src/ui2_meter_edit.c:293 src/ui2_scope_edit.c:244
++#: src/ui2_scope_edit.c:369 src/ui2_spectrum_edit.c:265
++#: src/ui2_spectrum_edit.c:410
++msgid "Horizontal"
++msgstr ""
++
++#: src/ui2_meter_edit.c:180 src/ui2_meter_edit.c:294
++#: src/ui2_spectrum_edit.c:268 src/ui2_spectrum_edit.c:411
++msgid "Slide"
++msgstr ""
++
++#: src/ui2_meter_edit.c:218
++msgid "Meter error"
++msgstr ""
++
++#: src/ui2_meter_edit.c:218
++msgid "Meter must contain a key and valid image."
++msgstr ""
++
++#: src/ui2_meter_edit.c:273 src/ui2_spectrum_edit.c:389
++msgid "Segments"
++msgstr ""
++
++#: src/ui2_parse.c:467
++#, c-format
++msgid "No background image from: %s\n"
++msgstr ""
++
++#: src/ui2_scope_edit.c:231
++msgid "Size"
++msgstr ""
++
++#: src/ui2_scope_edit.c:247 src/ui2_scope_edit.c:370
++#: src/ui2_spectrum_edit.c:274 src/ui2_spectrum_edit.c:415
++msgid "Dynamic size"
++msgstr ""
++
++#: src/ui2_scope_edit.c:294
++msgid "Scope error"
++msgstr ""
++
++#: src/ui2_scope_edit.c:294
++msgid "Scope must contain a key and valid image."
++msgstr ""
++
++#: src/ui2_spectrum_edit.c:262 src/ui2_spectrum_edit.c:409
++msgid "Bands:"
++msgstr ""
++
++#: src/ui2_spectrum_edit.c:272 src/ui2_spectrum_edit.c:412
++msgid "Single image"
++msgstr ""
++
++#: src/ui2_spectrum_edit.c:319
++msgid "Spectrum error"
++msgstr ""
++
++#: src/ui2_spectrum_edit.c:319
++msgid "Spectrum must contain a key and valid image."
++msgstr ""
++
++#: src/ui2_spectrum_edit.c:389
++msgid "Bands"
++msgstr ""
++
++#: src/ui2_util.c:473
++#, c-format
++msgid "Unable to save skin state information to: %s\n"
++msgstr ""
++
++#: src/ui_help.c:90
++#, c-format
++msgid ""
++"Unable to load:\n"
++"%s"
++msgstr ""
++
++#: src/ui_help.c:223
++msgid "Close"
++msgstr "Zamknij"
++
++#: src/ui_pathsel.c:307
++#, c-format
++msgid "File name %s already exists."
++msgstr ""
++
++#: src/ui_pathsel.c:313
++#, c-format
++msgid "Failed to rename %s to %s."
++msgstr ""
++
++#: src/ui_pathsel.c:343
++#, c-format
++msgid ""
++"Unable to delete file:\n"
++"%s"
++msgstr ""
++
++#: src/ui_pathsel.c:344
++msgid "File deletion failed"
++msgstr "Skasowanie nie powiod³o siê"
++
++#: src/ui_pathsel.c:397
++#, c-format
++msgid ""
++"About to delete the file:\n"
++" %s"
++msgstr ""
++
++#: src/ui_pathsel.c:398
++msgid "Delete file"
++msgstr "Skasuj plik"
++
++#: src/ui_pathsel.c:402 src/ui_pathsel.c:463
++msgid "Delete"
++msgstr "Skasuj"
++
++#: src/ui_pathsel.c:437 src/ui_pathsel.c:461
++msgid "Rename"
++msgstr "Zmieñ nazwê"
++
++#: src/ui_pathsel.c:510 src/ui_pathsel.c:763
++msgid "New Directory"
++msgstr "Nowy katalog"
++
++#: src/ui_pathsel.c:520
++#, c-format
++msgid ""
++"Unable to create directory:\n"
++"%s"
++msgstr ""
++
++#: src/ui_pathsel.c:521
++msgid "Error creating directory"
++msgstr ""
++
++#: src/ui_pathsel.c:698
++msgid "All Files"
++msgstr "Wszystkie pliki"
++
++#: src/ui_pathsel.c:757
++msgid "Home"
++msgstr "Katalog Domowy"
++
++#: src/ui_pathsel.c:769
++msgid "Show hidden"
++msgstr "Poka¿ ukryte"
++
++#: src/ui_pathsel.c:820
++msgid "Filter:"
++msgstr "Filtr:"
++
++#: src/ui_tabcomp.c:173
++#, c-format
++msgid "Unable to write history lists to: %s\n"
++msgstr ""
++
++#: src/ui_utildlg.c:192
++msgid "Cancel"
++msgstr "Anuluj"
++
++#: src/ui_utildlg.c:231
++msgid "Ok"
++msgstr "Zatwierd¼"
+diff -Nuard sound-monitor-1.99.0.orig/po/POTFILES.in sound-monitor-1.99.0/po/POTFILES.in
+--- sound-monitor-1.99.0.orig/po/POTFILES.in	2003-02-11 17:34:12.000000000 +0100
++++ sound-monitor-1.99.0/po/POTFILES.in	2003-09-14 14:15:22.000000000 +0200
+@@ -1,3 +1,4 @@
++src/GNOME_SoundMonitorApplet.xml
+ src/GNOME_SoundMonitorApplet.server.in.in
+ src/main.c
+ src/manager.c
+diff -Nuard sound-monitor-1.99.0.orig/po/sound-monitor-2.pot sound-monitor-1.99.0/po/sound-monitor-2.pot
+--- sound-monitor-1.99.0.orig/po/sound-monitor-2.pot	2003-02-14 20:23:27.000000000 +0100
++++ sound-monitor-1.99.0/po/sound-monitor-2.pot	2003-09-14 14:21:12.000000000 +0200
+@@ -7,7 +7,8 @@
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+-"POT-Creation-Date: 2003-02-14 14:23-0500\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2003-09-14 14:21+0200\n"
+ "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+ "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+@@ -15,6 +16,26 @@
+ "Content-Type: text/plain; charset=CHARSET\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ 
++#: src/GNOME_SoundMonitorApplet.xml.h:1
++msgid "_About..."
++msgstr ""
++
++#: src/GNOME_SoundMonitorApplet.xml.h:2
++msgid "_Help"
++msgstr ""
++
++#: src/GNOME_SoundMonitorApplet.xml.h:3
++msgid "_Manager..."
++msgstr ""
++
++#: src/GNOME_SoundMonitorApplet.xml.h:4
++msgid "_Preferences..."
++msgstr ""
++
++#: src/GNOME_SoundMonitorApplet.xml.h:5
++msgid "_Skin editor..."
++msgstr ""
++
+ #: src/GNOME_SoundMonitorApplet.server.in.in.h:1
+ msgid "Monitor sound output of esound."
+ msgstr ""

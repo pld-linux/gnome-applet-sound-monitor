@@ -4,16 +4,17 @@ Summary:	Sound Monitor panel applet
 Summary(pl):	Aplet panelu monitoruj±cy d¼wiêk
 Name:		gnome-applet-%{_realname}
 Version:	1.99.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gqapplets/%{_realname}-%{version}.tar.gz
 # Source0-md5:	f70e1daa9822b87d787db17d0091e05c
+Patch0:		%{_realname}-pl.patch
 URL:		http://gqapplets.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	esound-devel >= 0.2.13
-BuildRequires:	gnome-panel-devel >= 2.0.0
+BuildRequires:	gnome-panel-devel >= 2.2.0
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,6 +32,7 @@ widma.
 
 %prep
 %setup -q -n %{_realname}-%{version}
+%patch0 -p1
 
 %build
 rm -f missing
@@ -44,12 +46,21 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+	
+%find_lang %{_realname} --with-gnome --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%post
+/usr/bin/scrollkeeper-update
+%gconf_schema_install
+
+%postun	-p /usr/bin/scrollkeeper-update
+
+%files -f %{_realname}.lang
 %defattr(644,root,root,755)
 %doc README TODO ChangeLog src/themes/SKIN-SPECS
 %{_sysconfdir}/schemas/sound-monitor.schemas
@@ -59,8 +70,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-2.0/ui/GNOME_SoundMonitorApplet.xml
 %{_pixmapsdir}/*.png
 %{_datadir}/sound-monitor2/*
-
-
-#%{_sysconfdir}/CORBA/servers/sound-monitor2_applet.gnorba
-#%{_datadir}/applets/Multimedia/sound-monitor2_applet.desktop
-#%{_datadir}/sound-monitor2

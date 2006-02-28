@@ -39,7 +39,8 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure --with-gconf-schema-file-dir=%{_sysconfdir}/schemas
+%configure \
+	--with-gconf-schema-file-dir=%{_sysconfdir}/schemas
 %{__make}
 
 %install

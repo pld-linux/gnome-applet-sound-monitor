@@ -1,7 +1,7 @@
 %define		_realname	sound-monitor
 
 Summary:	Sound Monitor panel applet
-Summary(pl):	Aplet panelu monitoruj±cy d¼wiêk
+Summary(pl.UTF-8):   Aplet panelu monitorujÄ…cy dÅºwiÄ™k
 Name:		gnome-applet-%{_realname}
 Version:	1.99.0
 Release:	2
@@ -25,9 +25,9 @@ Panel applet for gnome. Displays sound output of esound. Included many
 themes, can show sound volume, an oscilloscope, or a spectrum analyzer
 in the display.
 
-%description -l pl
-Aplet panelu GNOME, wy¶wietlaj±cy stan wyj¶cia d¼wiêku esound. Zawiera
-wiele motywów, mo¿e wy¶wietlaæ g³o¶no¶æ, oscyloskop lub analizator
+%description -l pl.UTF-8
+Aplet panelu GNOME, wyÅ›wietlajÄ…cy stan wyjÅ›cia dÅºwiÄ™ku esound. Zawiera
+wiele motywÃ³w, moÅ¼e wyÅ›wietlaÄ‡ gÅ‚oÅ›noÅ›Ä‡, oscyloskop lub analizator
 widma.
 
 %prep

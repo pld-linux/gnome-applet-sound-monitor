@@ -1,7 +1,7 @@
 %define		_realname	sound-monitor
 
 Summary:	Sound Monitor panel applet
-Summary(pl.UTF-8):   Aplet panelu monitorujący dźwięk
+Summary(pl.UTF-8):	Aplet panelu monitorujący dźwięk
 Name:		gnome-applet-%{_realname}
 Version:	1.99.0
 Release:	2
